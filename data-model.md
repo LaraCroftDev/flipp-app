@@ -8,7 +8,7 @@ data type | int64 | varchar(256) | varchar(50) | varchar(50) |  []int64 | int64
 
 <li><h3>Shopping Lists:</h3></li>
 
-name | id | user_id |  added_products | clipped_coupons_ids 
+name | id (primary key) | user_id (foreign key) |  added_products | clipped_coupons_ids 
 ---  |--- | --- | --- |--- 
 data type | int64 | int64 | text | []int64 
 
