@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS retailer_categories(
+    id SMALLSERIAL PRIMARY KEY,
+    category_name VARCHAR(25) NOT NULL UNIQUE
+);
