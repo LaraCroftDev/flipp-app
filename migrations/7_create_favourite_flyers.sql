@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS favourite_flyers(
     id BIGSERIAL PRIMARY KEY,
-    user_id BIGINT NOT NULL UNIQUE,
+    user_id BIGINT NOT NULL,
     FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,
-    flyer_id BIGINT NOT NULL UNIQUE,
+    flyer_id BIGINT NOT NULL,
     FOREIGN KEY(flyer_id) REFERENCES flyers(id) ON DELETE CASCADE,
     date_favourited DATE NOT NULL DEFAULT CURRENT_DATE
 );
